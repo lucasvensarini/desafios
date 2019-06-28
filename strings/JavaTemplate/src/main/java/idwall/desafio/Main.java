@@ -11,6 +11,7 @@ public class Main {
     private static final String DEFAULT_INPUT_TEXT = "In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.\n" +
             "\n" +
             "And God said, \"Let there be light,\" and there was light. God saw that the light was good, and he separated the light from the darkness. God called the light \"day,\" and the darkness he called \"night.\" And there was evening, and there was morning - the first day.";
+
     private static final Integer DEFAULT_LIMIT = 40;
     private static final Boolean DEFAULT_JUSTIFY = true;
 
@@ -41,8 +42,8 @@ public class Main {
         System.out.println("=========================");
 
         // Run IdwallFormatter
-        final StringFormatter sf = new IdwallFormatter();
-        String outputText = sf.format(text);
+        final StringFormatter sf = new IdwallFormatter(limit);
+        String outputText = sf.format(text, justify);
 
         // Print output text
         System.out.println("Output: ");

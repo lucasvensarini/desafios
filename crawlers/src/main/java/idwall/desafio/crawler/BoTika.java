@@ -23,11 +23,11 @@ public class BoTika extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return "LcvBot";
+        return "";
     }
 
     public String getBotToken() {
-        return "868056452:AAGPyffTsAIL154WqUWUnV8miNDcLEfHH0M";
+        return "";
     }
 
     private void enviaTopThreads(Update update, String mensagem) {
